@@ -5,10 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  /* border: 1px solid red */
 }
 
-body {
-  padding-bottom: 500px;
+app-root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
 
 .assunto {
