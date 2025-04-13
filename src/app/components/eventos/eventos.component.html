@@ -1,0 +1,7 @@
+<div class="assunto">
+  <h2>Eventos</h2>
+  <article (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">
+    <div *ngIf="exibir">Boooo!</div>
+  </article>
+  <div class="quadrado" [ngStyle]="{background: corAtual}" (click)="trocarCorUnicaVez()" (dblclick)="trocarCor()"></div>
+</div>
