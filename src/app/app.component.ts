@@ -4,10 +4,11 @@ import { PrimeiroComponenteComponent } from "./components/primeiro-componente/pr
 import { UpperCasePipe } from '@angular/common';
 import { DadosComponent } from "./components/dados/dados.component";
 import { InputPaiComponent } from "./components/input-pai/input-pai.component";
+import { DiretivasComponent } from "./components/diretivas/diretivas.component";
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent],
+  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,15 @@
+.class1 {
+  background-color: aquamarine;
+  text-decoration: underline;
+}
+
+.class2 {
+  background-color: lightblue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.class3 {
+  text-align: center;
+  border: 1px solid red
+}
