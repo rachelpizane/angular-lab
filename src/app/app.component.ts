@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { PrimeiroComponenteComponent } from "./components/primeiro-componente/primeiro-componente.component";
 import { UpperCasePipe } from '@angular/common';
 import { DadosComponent } from "./components/dados/dados.component";
@@ -14,7 +14,7 @@ import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-bin
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent, IfRenderComponent, EventosComponent, OutputPaiComponent, ListRenderComponent, PipeComponent, TwoWayBindingComponent],
+  imports: [RouterModule, UpperCasePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
