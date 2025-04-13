@@ -9,10 +9,11 @@ import { IfRenderComponent } from "./components/if-render/if-render.component";
 import { EventosComponent } from "./components/eventos/eventos.component";
 import { OutputPaiComponent } from "./components/output-pai/output-pai.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
+import { PipeComponent } from "./components/pipe/pipe.component";
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent, IfRenderComponent, EventosComponent, OutputPaiComponent, ListRenderComponent],
+  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent, IfRenderComponent, EventosComponent, OutputPaiComponent, ListRenderComponent, PipeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
