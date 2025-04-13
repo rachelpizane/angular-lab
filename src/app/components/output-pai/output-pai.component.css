@@ -1,0 +1,4 @@
+.assunto > div {
+  border: 2px solid rgb(0, 68, 255);
+  padding: 1rem .75em;
+}
