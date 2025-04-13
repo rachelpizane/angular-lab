@@ -1,0 +1,14 @@
+<div class="assunto">
+  <button (click)="handleClick()">{{ conteudoBotao }}</button>
+  <div *ngIf="podeMostrar"> {{ conteudo }}</div>
+
+  <div>
+    <button (click)="trocarNome()">{{ conteudoBotao2 }}</button>
+
+    <p *ngIf="name == 'Rachel' ; else nameNotFound">Meu nome é Rachel</p>
+
+    <ng-template #nameNotFound>
+      <p>O nome não foi encontrado!</p>
+    </ng-template>
+  </div>
+</div>
