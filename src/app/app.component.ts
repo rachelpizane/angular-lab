@@ -10,10 +10,11 @@ import { EventosComponent } from "./components/eventos/eventos.component";
 import { OutputPaiComponent } from "./components/output-pai/output-pai.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { PipeComponent } from "./components/pipe/pipe.component";
+import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent, IfRenderComponent, EventosComponent, OutputPaiComponent, ListRenderComponent, PipeComponent],
+  imports: [UpperCasePipe, PrimeiroComponenteComponent, DadosComponent, InputPaiComponent, DiretivasComponent, IfRenderComponent, EventosComponent, OutputPaiComponent, ListRenderComponent, PipeComponent, TwoWayBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

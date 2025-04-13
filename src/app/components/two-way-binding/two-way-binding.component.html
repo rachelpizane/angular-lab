@@ -1,0 +1,22 @@
+<div class="assunto">
+  <h2>Two Way Binding</h2>
+
+  <form action="">
+    <div>
+      <label for="name">Nome:</label>
+      <input type="text" name="name" placeholder="Digite seu nome" [(ngModel)]="nome" />
+    </div>
+
+    <div>
+      <label for="genero">Sexo:</label>
+      <label><input type="radio" name="genero" value="M" [(ngModel)]="genero" /> Masculino</label>
+      <label><input type="radio" name="genero" value="F" [(ngModel)]="genero" /> Feminino</label>
+    </div>
+  </form>
+
+  <div>
+    <h2>Resultado</h2>
+    <p>Nome: {{ nome }}</p>
+    <p>Sexo: {{ genero }}</p>
+  </div>
+</div>
