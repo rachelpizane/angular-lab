@@ -1,0 +1,39 @@
+<section>
+  <div *ngIf="loading">Carregando...</div>
+
+  <div class="perfil" *ngIf="!loading && usuario">
+    <h1>Perfil do Usuário</h1>
+    
+    <div class="perfil-info">
+      <div class="perfil-info-topic">
+        <h2>Informações Gerais</h2>
+        <p><strong>ID:</strong> {{ usuario.id }}</p>
+        <p><strong>Nome:</strong> {{ usuario.name }}</p>
+        <p><strong>Username:</strong> {{ usuario.username }}</p>
+        <p><strong>Email:</strong> {{ usuario.email }}</p>
+      </div>
+
+      <div class="perfil-info-topic">
+        <h2>Endereço</h2>
+        <p><strong>Rua:</strong> {{ usuario.address.street }}</p>
+        <p><strong>Complemento:</strong> {{ usuario.address.suite }}</p>
+        <p><strong>Cidade:</strong> {{ usuario.address.city }}</p>
+        <p><strong>CEP:</strong> {{ usuario.address.zipcode }}</p>
+        <p><strong>Geo:</strong> Lat: {{ usuario.address.geo.lat }}, Lng: {{ usuario.address.geo.lng }}</p>
+      </div>
+
+      <div class="perfil-info-topic">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> {{ usuario.phone }}</p>
+        <p><strong>Website:</strong> <a href="http://{{ usuario.website }}" target="_blank">{{ usuario.website }}</a></p>
+      </div>
+
+      <div class="perfil-info-topic">
+        <h2>Empresa</h2>
+        <p><strong>Nome:</strong> {{ usuario.company.name }}</p>
+        <p><strong>Slogan:</strong> {{ usuario.company.catchPhrase }}</p>
+        <p><strong>BS:</strong> {{ usuario.company.bs }}</p>
+      </div>
+    </div>
+  </div>
+</section>
