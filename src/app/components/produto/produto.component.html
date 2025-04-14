@@ -1,0 +1,20 @@
+<div class="assunto">
+  <h1>Produtos</h1>
+
+  <section>
+    @if(produtos.length !== 0) {
+      <div class="card" *ngFor="let produto of produtos" id="{{ produto.id }}">
+        <div class="card-header">
+          <h5 class="card-title">{{ produto.nome }}</h5>
+          <button (click)="removerProduto(produto)">X</button>
+        </div>
+        <p><span class="card-text">Preço: </span>{{ produto.preco | currency:'BRL' }}</p>
+        <p><span class="card-text">Categoria: </span>{{ produto.categoria }}</p>
+      </div>
+
+    } @else {
+      <p>Produtos não encontrados</p>
+    }
+  </section>
+
+</div>

@@ -1,0 +1,39 @@
+section {
+  display: flex;
+  gap: 1.5em;
+  padding: 1em 0;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  display: grid;
+  gap: .5em;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  border-radius: .25em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header button{
+  background-color: #ff1100;
+  color: white;
+  border: none;
+  padding: .15em .65em;
+  border-radius: .25em;
+  cursor: pointer;
+  font-size: .6rem;
+}
+
+.card-text {
+  font-weight: bold;
+}
