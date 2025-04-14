@@ -1,0 +1,31 @@
+<div class="assunto">
+  <h1>Usuarios</h1>
+  <section>
+    @if(!loading) {
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuarios">
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.username }}</td>
+            <td>{{ usuario.name }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.phone }}</td>
+          </tr>
+        </tbody>
+      </table>
+    } @else {
+      <div class="loading">
+        <p>Carregando...</p>
+      </div>
+    }
+  </section>
+</div>
