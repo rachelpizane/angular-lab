@@ -2,10 +2,11 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Usuario } from '../../usuario';
 import { UsuarioService } from '../../services/usuario/usuario.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-http',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './http.component.html',
   styleUrl: './http.component.css'
 })

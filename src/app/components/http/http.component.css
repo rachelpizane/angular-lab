@@ -8,3 +8,12 @@ th, td {
   padding: 8px;
   text-align: center;
 }
+
+.mais-detalhes {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: .15rem .35rem;
+  border-radius: .20rem;
+  text-decoration: none;
+}
