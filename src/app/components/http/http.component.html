@@ -11,6 +11,7 @@
             <th>Email</th>
             <th>Telefone</th>
             <th>Mais detalhes</th>
+            <th>Excluir</th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.phone }}</td>
             <td><a routerLink="/usuarios/{{usuario.id}}"class="mais-detalhes">+</a></td>
+            <td><button class="delete" (click)="removerUsuario(usuario.id)">x</button></td>
           </tr>
         </tbody>
       </table>

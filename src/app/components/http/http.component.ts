@@ -26,4 +26,10 @@ export class HttpComponent implements OnInit {
       this.loading = false;
     });
   }
+
+  removerUsuario(id: number): void {
+    this.usuarioService.removeById(id).subscribe(() => {
+      this.usuarios = this.usuarios.filter(usuario => usuario.id !== id);
+    });
+  }
 }

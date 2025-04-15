@@ -17,3 +17,12 @@ th, td {
   border-radius: .20rem;
   text-decoration: none;
 }
+
+.delete {
+  cursor: pointer;
+  background-color: #ff0800;
+  color: white;
+  padding: .2rem .5rem;
+  border-radius: .20rem;
+  border: none;
+}
